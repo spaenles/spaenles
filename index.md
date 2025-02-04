@@ -1,32 +1,15 @@
----
-title: My Projects
-layout: default
----
-
-
-
 # My Projects
-Welcome to my portfolio! Here are some of the projects I've worked on.
+Hello again! Here are some of the neat things I've worked on. I've seperated them out based on work done for a class at MSU and work done in my free time.
 
 ## Automated Phosphate Sensing System
-- **Description:** Designed an automated system for detecting phosphate concentration in water.
-- **Technologies Used:** Arduino, photodetection, calibration techniques
-- [View Project Repository](#)
+This was a group project done in my last semester at MSU as part of a capstone design class. Our project was to design and build a complete system for automated phospate detection in water samples. The system utilizes an arduino to control a number of pumps and sensors to collect a sample, mix it with a chemical reagent, measure the resulting color change, and determine the amount of phosphate present in the sample. If you'd like to know more you can click [here]().
 
-## Data Collection System with SD Card Logging
-- **Description:** Developed an Arduino-based system to collect and store sensor data on an SD card.
-- **Technologies Used:** Arduino, SD card module, C++
-- [View Project Repository](#)
+## Design and Characterization of an 8-Bit Microprocessor Data Path
 
-## Sentaurus Workbench Simulation for Semiconductor Doping
-- **Description:** Simulated junction depth formation using Sentaurus Workbench.
-- **Technologies Used:** Sentaurus TCAD, semiconductor physics
-- [View Project Repository](#)
+## Fabrication of Microelectronic Devices on a Silicon Wafer
 
-## DIY Water Level Sensor
-- **Description:** Built a water level sensor using an Arduino and voltage-based sensing.
-- **Technologies Used:** Arduino, GPIO, analog sensors
-- [View Project Repository](#)
+## Custom 2-Axis Joystick
+I got into flight simulators several years ago and decided it would be neat to design and make my own custom joystick, as a bonus maybe I could save a few dollars too... Many hours later, and after spending more on a new 3D printer and components than a comercially available joystick, I had my very own one of a kind toy! I have since put some time into making a V2 but haven't gotten around to finishing that. You can see more about that [here]().
 
-Feel free to explore and reach out if you have any questions!
-
+## Anti-Theft Cat Bowl
+This is a very much in progress project I've been working on on and off for about a year. The idea is to make a device that can hold within itself a cat bowl, or cat food, and then open only when a specific cat approaches. The motivation for this arises from my partner's two cats, one of whom enjoys food a little too much and will often steal food from his shy little brother. At the moment I am investigating using an ESP32 to detect the proximity of a BLE beacon that will be attached to the authorized cat and open a door when that cat gets within a certain range...
