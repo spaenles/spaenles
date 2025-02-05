@@ -62,8 +62,9 @@ Here are the results in a table:
 
 Tpdr is the propogation delay for rising edges, going from low to high. Tpdf is propogation delay for falling edges. Rise and fall times are the time it takes for the output to go from one threshold voltage to another.
 
+## My Contributions: The Shifter
+Great, now that we have gone over the basic process I wanted to show you the part of the project that I was responsible for, the shifter! I'm not going to explain exactly how it works, that's a little beyond the scope of what I want to include here but you can check ot these great explanations: [High level overview](https://amazingalgorithms.com/definitions/barrel-shifter/), [Detailed explanation](https://www.princeton.edu/~rblee/ELE572Papers/Fall04Readings/Shifter_Schulte.pdf).
 
-## Maybe explain shifter?
 
 ## Show various component schematics and layouts
 
