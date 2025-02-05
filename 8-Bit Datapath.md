@@ -65,6 +65,15 @@ Tpdr is the propogation delay for rising edges, going from low to high. Tpdf is 
 ## My Contributions: The Shifter
 Great, now that we have gone over the basic process I wanted to show you the part of the project that I was responsible for, the shifter! I'm not going to explain exactly how it works, that's a little beyond the scope of what I want to include here but you can check ot these great explanations: [High level overview](https://amazingalgorithms.com/definitions/barrel-shifter/), [Detailed explanation](https://www.princeton.edu/~rblee/ELE572Papers/Fall04Readings/Shifter_Schulte.pdf).
 
+The shifter I implemented is capable of manipulating the full 8-bit word up to 3 bits either left or right, and can perform both rotations and logical shifts. I initially wanted to do up to 8 bits in either direction but decided that might be too ambitious as I really wanted to get a completed working shifter. In hindsight this was a mistake, adding that extra bit of functionality would not have been a huge amount more work only requiring one more shift stage, and this added complexity might have been enough to push us into first place. I also explored adding arithmetic shifting functionality, I thought I would be able to implement it with just a few additional gates in the masking circuitry and one additional control bit but I wasn't able to get the functional simulations working in time before I had to start on the layouts.
+
+Here is a brief explanation of the shifter components and what each does so that you can better understand the whole thing:
+
+The shifter has two main stages, the rotate stage and the masking stage. The rotate stage is pretty self explanitory, it takes an 8 bit input and can rotate that input up to 3 bits either left or right. The amount and direction rotated is controlled by three control bits, I have named them *Left*, *K0* and *K1*. Left controls direction, K0 and K1 combined control shift amount. After the rotate stage is a masking stage, which does the masking necessary to turn a rotation into a logical shift using one control bit called *Shift* alongside the control bit *Left*. I broke out the control signal generation for each sub-component into their own circuits, named Rotate Control Gen and Masking control. The control signal generation circuitry is based on decoding the desired mux control signals for each given input, I'll show that decoding along with the drawings from the ideation phase. In addition, to make creating the layouts easier I decided to break the rotate and masking components into bitslices. Essentially instead of creating a monolithic 8 bit wide block of muxes I devised a way to break that structure into single bit components which could then be copied as many times as necessary, in this case 8, to create the larger 8-bit array. Doing so with the masking circuitry provided the same ease of implementation.
+
+With all that out of the way, here's a big dump of images showing what I made:
+
+### Ideation Phase
 
 ## Show various component schematics and layouts
 
