@@ -2,7 +2,7 @@
 This project involved the fabrication and analysis of microelectronic devices as a hands-on component of a microelectronic fabrication course. The goal was to process a silicon wafer through a series of standard semiconductor manufacturing steps to create a number of functional devices. Following fabrication, the devices were measured and compared to theoretical predictions to evaluate the impact of process variations on device performance. This analysis provided valuable insights into how fabrication conditions influence the electrical properties of microelectronic components.
 
 # Fabrication Steps
-I wanted to walk through a number of the steps that our wafers underwent as we processed them. For the analysis stage of the project I chose to measure and do calculations for the mosfets we created so I'll use them as an example later to show each step in a little more detail. We used a number of standard processes while creating our devices including photolithography, wet etching, thermal oxidation, metal deposition, and diffusion doping.
+I wanted to walk through a number of the steps that our wafers underwent as we processed them. For the analysis stage of the project I chose to measure and do calculations for the mosfets we created so I'll use them as an example to show each step in a little more detail. We used a number of standard processes while creating our devices including photolithography, wet etching, thermal oxidation, metal deposition, and diffusion doping.
 
 Using the mosfet as an example I've drawn up a step by step walkthrough of how we processed the wafers.
 
