@@ -1,5 +1,5 @@
 # My Projects
-Hello again! Here are some of the things I've worked on over the last few years that I'm proud of and think are neat. Some of them are work done for classes at MSU and others were done in my free time.
+Hello again! Here are some of the things I've worked on over the last few years that I'm proud of and think are neat. Some of them are work done for classes at MSU and others were done in my free time. Please forgive the fact that these are not all complete! I am trying to get them filled out as quickly as possible!
 
 ## Automated Phosphate Sensing System
 This was a group project done in my last semester at MSU as part of a capstone design class. Our task was to design and build a complete system for automated phospate detection in water samples. The system utilizes an arduino to control a number of pumps and sensors to collect a sample, mix it with a chemical reagent, measure the resulting color change, and determine the amount of phosphate present in the sample. If you'd like to know more you can click [here](https://github.com/spaenles/spaenles/edit/testing/CapstoneProject.md).
