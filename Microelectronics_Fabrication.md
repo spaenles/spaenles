@@ -18,6 +18,8 @@ Using the mosfet as an example I've drawn up a step by step walkthrough of how w
 
 **Final Results:**
 
+You can see the array of mosfets on the top half of the wafer, hopefully you can also see how the masks and process steps I sketched out factor in to their creation.
+
 ![image](https://github.com/user-attachments/assets/0bd65125-b19f-42b2-9739-1383364a9ba0)
 
 
@@ -38,10 +40,9 @@ The graphs below illustrate the comparison between the calculated and measured I
 ![image](https://github.com/user-attachments/assets/8c5d6eac-58d4-4bbc-8d30-77e866bce664)
 
 
-As a quick bonus, during one of labs the mercury vapor bulb used for exposing photoresist in the mask aligner we used exploded. Because this was the only mask aligner in the engineering building we had to move subsequent labs to the engineering research complex where they have a clean room! Normally the clean room is used only for research and graduate level courses so we would not normally get to work in it but because of the mishap we were allowed to use it. It was a super cool experience! I never dreamed I would get to work in an environment like that and as a bonus I got to keep the clean room bunny suit they gave us! Also It was really cool to get to see the machines we had learned about in class and get more detailed explanations of those processes, Chemical vapor deposition and Electron-beam physical vapor deposition are such cool technologies, they are almost like a form of sorcery!
+As a quick bonus, during one of labs the mercury vapor bulb used for exposing photoresist in the mask aligner we used exploded! Because this was the only mask aligner in the engineering building we had to move subsequent labs to the engineering research complex where they have a clean room. Normally the clean room is used only for research and graduate level courses so we would not normally get to work in it but because of the mishap we were allowed to use it. It was a super cool experience! I never dreamed I would get to work in an environment like that and as a bonus I got to keep the clean room bunny suit they gave us! Also It was really cool to get to see the machines we had learned about in class and get more detailed explanations of those processes, Chemical vapor deposition and Electron-beam physical vapor deposition are such cool technologies, they are almost like a form of sorcery!
 
 **Me suited up and ready for some clean room action:**
-
 
 ![image](https://github.com/user-attachments/assets/8f669888-613a-46d7-a9b7-795eef99d4ec)
 ![image](https://github.com/user-attachments/assets/ff5d8bc6-8b58-4868-bef0-4dd6b6403e78)
