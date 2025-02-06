@@ -17,4 +17,4 @@ Here are some ideas to get you started:
 
 I'm Sebastian, a Computer Engineering Graduate from MSU. I figured I should put something together to try and show off some of the projects I have worked on both in my free time and during my time at MSU, hence this Github thing...
 
-If you wanna check out some of the things I've done you can do so [here]()!
+If you wanna check out some of the things I've done you can do so [here](index.md)!
