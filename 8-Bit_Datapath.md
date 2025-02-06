@@ -69,37 +69,82 @@ The shifter I implemented is capable of manipulating the full 8-bit word up to 3
 
 Here is a brief explanation of the shifter components and what each does so that you can better understand the whole thing:
 
-The shifter has two main stages, the rotate stage and the masking stage. The rotate stage is pretty self explanitory, it takes an 8 bit input and can rotate that input up to 3 bits either left or right. The amount and direction rotated is controlled by three control bits, I have named them *Left*, *K0* and *K1*. *Left* controls direction, *K0* and *K1* combined control shift amount. After the rotate stage is a masking stage, which does the masking necessary to turn a rotation into a logical shift using one control bit called *Shift* alongside the control bit *Left*. I broke out the control signal generation for each sub-component into their own circuits, named Rotate Control Gen and Masking control. The control signal generation circuitry is based on decoding the desired mux control signals for each given input, I'll show that decoding along with the drawings from the ideation phase. In addition, to make creating the layouts easier I decided to break the rotate and masking components into bitslices. Essentially instead of creating a monolithic 8 bit wide block of muxes I devised a way to break that structure into single bit components which could then be copied as many times as necessary, in this case 8, to create the larger 8-bit array. Doing so with the masking circuitry provided the same ease of implementation.
+The shifter has two main stages, the rotate stage and the masking stage. The rotate stage is pretty self explanitory, it takes an 8 bit input and can rotate that input up to 3 bits either left or right. The amount and direction rotated is controlled by three control bits, I have named them *Left*, *K0* and *K1*. *Left* controls direction, *K0* and *K1* combined control shift amount. After the rotate stage is a masking stage, which does the masking necessary to turn a rotation into a logical shift using one control bit called *Shift* alongside the control bit *Left*. I broke out the control signal generation for each sub-component into their own circuits, named Rotate Control Gen and Masking control. The control signal generation circuitry is based on decoding the desired mux control signals for each given input, I'll show that decoding along with the drawings from the ideation phase. Breaking these control signal blocks off into seperate components allowed me to break the shifter down into smaller components, which came in handy later during the integration of all three parts. It allowed us to nestle the various shifter parts into convenient gaps that appeared between the ALU and SRAM array. In addition, to make creating the layouts easier I decided to break the rotate and masking components into bitslices. Essentially instead of creating a monolithic 8 bit wide block of muxes I devised a way to break that structure into single bit components which could then be copied as many times as necessary, in this case 8, to create the larger 8-bit array. Doing so with the masking circuitry provided the same ease of implementation. 
 
 With all that out of the way, here's a big dump of images showing what I made:
 
 ### Ideation Phase
+Please forgive my lack luster drawing skills and handwriting
 
-## Show various component schematics and layouts
+**Rotate Block Sketch and Decoding:**
 
+![image](https://github.com/user-attachments/assets/6d438b1a-e435-46d8-9e59-ba43e0b2d9b9)
 
+**Rotate Bitslice Sketch:**
 
+![image](https://github.com/user-attachments/assets/8e2964a9-512c-418b-914a-ebb440d1f54e)
 
+**Masking Bitslice Sketch:**
 
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/1dd37d40-98eb-49db-b33b-712e02d1aba8)
 
 
+**Masking Bitslice Decoding:**
 
+![image](https://github.com/user-attachments/assets/dac89963-7125-4fb8-ae1d-e24ed6f37315)
 
+### Schematics
 
+**Rotate Block Schematic:**
 
+![image](https://github.com/user-attachments/assets/8eb8b8b1-07c9-494b-aa8f-ac2c640c2412)
 
+**Rotate Bitslice Schematic:**
 
+![image](https://github.com/user-attachments/assets/0ac7e358-457e-446e-ab5b-97d317ef0259)
 
+**Rotate Control Generation Schematic:**
 
+Again this is from decoding the control signals, you can see the initial sketch of this to the right of the rotate block sketch
 
+![image](https://github.com/user-attachments/assets/ab896b2e-807f-4974-9b2b-5c092632d5b2)
 
+**Masking Block Schematic:**
 
+![image](https://github.com/user-attachments/assets/82a52774-17ee-48cc-b757-50b3f1c85aaa)
 
+**Masking Bitslice Schematic:**
+
+![image](https://github.com/user-attachments/assets/bab93608-3a66-4c49-8b3d-c95986ef5df9)
+
+**Masking Control Schematic:**
+
+Hopefully can see how I stripped this bit of control circuitry off of the bitslice. It is present in the initial sketches I have but at some point I realized that by removing it from each slice I can greatly reduce the number of gates and therefore area used by the masking module. Doing it this way means I only need one set of circuitry for all 8 bit slices.
+
+![image](https://github.com/user-attachments/assets/6dc4353e-f4ab-4baf-9bf7-35def4e808ab)
+
+### Layouts
+
+**Rotate Block Layout:**
+
+![image](https://github.com/user-attachments/assets/4cbd33aa-e48d-4217-8c36-9db412a0ba2a)
+
+**Rotate Bitslice Layout:**
+
+![image](https://github.com/user-attachments/assets/dc238e42-9e5e-4118-8aba-dd8e44c40503)
+
+**Rotate Control Generation Layout:**
+
+![image](https://github.com/user-attachments/assets/2c7b73ca-25ad-4bef-a62b-f48eb9552561)
+
+**Masking Block Layout:**
+
+![image](https://github.com/user-attachments/assets/db20927a-c202-40b7-bf73-23718d437516)
+
+**Masking Bitslice Layout:**
+
+![image](https://github.com/user-attachments/assets/8e895ab6-559d-4b82-92e8-4d416e2d1c7e)
+
+**Masking Control Layout:**
+
+![image](https://github.com/user-attachments/assets/7f6f59ca-75ca-42fe-964f-70ad283abdfd)
