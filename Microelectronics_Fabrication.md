@@ -10,13 +10,11 @@ Using the mosfet as an example I've drawn up a step by step walkthrough of how w
 
 ![image](https://github.com/user-attachments/assets/020e9d53-dc97-4b46-8eaa-42643ba14d14)
 
-blurb about masks
 
 **Fabrication process steps:**
 
 ![image](https://github.com/user-attachments/assets/5ad19e2a-caaf-4439-9147-fa9ebe5b2b76)
 
-blurb about steps
 
 **Final Results:**
 
@@ -24,7 +22,12 @@ blurb about steps
 
 
 # Results/Analysis
-As we processed the wafers through each step we did a number of calculations related to that step. So we knew expected device parameters like gate oxide thickness based on oxidation time, junction depth based on drive in time, and gate dimensions based on the masks. Using these parameters the expected electrical characteristics of the device can be found and a family of curves generated. Then after measuring the actual device we can compare the observed results with the expected results and do analysis. Can see that it is different in x, y and z ways. Working theory is that variations in high temperature processes affected parameters like junction depth, gate thickness etc. also possibly variations in etch time as they were etched as a batch so some may be over or underetched. End result is that real device differs from theoretical device. See graphs below. Maybe also some equations.
+
+As we processed the wafers through each step, we performed calculations related to process parameters, such as expected gate oxide thickness based on oxidation time, junction depth from drive-in diffusion, and gate dimensions determined by lithography masks. Using these parameters, I was able to calculate the ecpected electrical characteristics of the MOSFET and generated theoretical I-V curves.
+
+Once the devices were fabricated, we measured their electrical characteristics and compared them with theoretical predictions. The observed discrepancies can be attributed to variations in high-temperature processes, affecting junction depth and gate oxide thickness, as well as batch processing inconsistencies in etching, leading to slight dimensional deviations. These factors resulted in measurable differences between the real and theoretical device performance.
+
+The graphs below illustrate the comparison between the calculated and measured I-V curves.
 
 **Measured I-V Curves:**
 
