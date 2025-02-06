@@ -4,7 +4,7 @@ This project involved the fabrication and analysis of microelectronic devices as
 # Fabrication Steps
 I wanted to walk through a number of the steps that our wafers underwent as we processed them. For the analysis stage of the project I chose to measure and do calculations for the mosfets we created so I'll use them as an example to show each step in a little more detail. We used a number of standard processes while creating our devices including photolithography, wet etching, thermal oxidation, metal deposition, and diffusion doping.
 
-Using the mosfet as an example I've drawn up a step by step walkthrough of how we processed the wafers.
+Using the mosfet as an example I've drawn up a step by step walkthrough of how we processed the wafers. You can see the lithography masks used for the mosfets, they serve as a stencil allowing us to selectively cut holes through the silicon dioxide layer covering the surface of the wafer. Once we have our holes down to the substrate we can do some process: diffusion doping, metal deposition, or just growing more oxide. You'll be able to see those steps more clearly in the second sketch where I drew out a cross section of the wafer as we go through each step.
 
 **MOSFET fabrication masks:**
 
@@ -25,7 +25,7 @@ You can see the array of mosfets on the top half of the wafer, hopefully you can
 
 # Results/Analysis
 
-As we processed the wafers through each step, we performed calculations related to process parameters, such as expected gate oxide thickness based on oxidation time, junction depth from drive-in diffusion, and gate dimensions determined by lithography masks. Using these parameters, I was able to calculate the ecpected electrical characteristics of the MOSFET and generated theoretical I-V curves.
+As we processed the wafers through each step, we performed calculations related to process parameters, such as expected gate oxide thickness based on oxidation time and temperature, junction depth from drive-in diffusion time and temperature, and gate dimensions determined by the lithography masks. Using these parameters, I was able to calculate the expected electrical characteristics of the MOSFET and generated theoretical I-V curves.
 
 Once the devices were fabricated, we measured their electrical characteristics and compared them with theoretical predictions. The observed discrepancies can be attributed to variations in high-temperature processes, affecting junction depth and gate oxide thickness, as well as batch processing inconsistencies in etching, leading to slight dimensional deviations. These factors resulted in measurable differences between the real and theoretical device performance.
 
