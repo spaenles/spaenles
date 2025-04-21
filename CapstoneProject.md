@@ -1,7 +1,7 @@
+
 # Project Overview
 
 Excess phosphorus in agricultural runoff is a major environmental concern—it feeds harmful algae blooms that deplete oxygen in waterways and threaten aquatic life. For our senior capstone project, we were tasked with the creation of an automated phosphate sensing system that offers an affordable and accessible way to monitor phosphate levels in water sources, especially for agricultural applications.
-
 
 **Eutrophication as a result of excess phosphate:**
 
@@ -203,3 +203,4 @@ This was a really fun, engaging, and challenging project. The whole class was ra
 **Here we all are:**
 
 ![1737648002013](https://github.com/user-attachments/assets/99bcc9bf-397e-4624-806c-90de5d63bf5e)
+
