@@ -9,7 +9,7 @@ This project was the final assignment for my VLSI Design course in Spring 2024, 
 ## Fabrication of Microelectronic Devices on a Silicon Wafer
 This project involved fabricating and analyzing a variety of devices on a silicon wafer as the practical component of a microelectronic fabrication course. Post-fabrication, device characteristics were measured and compared to analytical predictions, with discrepancies analyzed to determine their possible causes. This analysis provided insight into how fabrication conditions affect electrical properties in microelectronic devices. [Interested?](Microelectronics_Fabrication.md)
 
-## Custom 2-Axis Joystick
+## 2-Axis Joystick
 I got into flight simulators several years ago and decided it would be neat to design and make my own custom joystick, as a bonus maybe I could save a few dollars too... Many hours later, and after spending more on a new 3D printer and components than I would have on a new joystick, I had my very own one of a kind toy! I have since put some time into making a V2 but haven't gotten around to finishing that.
 
 ## Anti-Theft Cat Bowl
