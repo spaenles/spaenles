@@ -72,7 +72,9 @@ CLM isn't the only second-order effect at play. Real MOSFETs suffer from:
 
 These effects combine to make the real transistor behave in a way that diverges from theoretical expectations—sometimes subtly, sometimes dramatically.
 
+# Conclusion
 
+The differences between the analytical and measured I–V curves for our fabricated MOSFET underscore an important lesson in microelectronics: real devices rarely behave like ideal ones. Variations in process parameters, coupled with inherent non-idealities like channel length modulation and mobility degradation, introduce behaviors that are absent from simplified models. Recognizing and accounting for these effects is essential—not just for interpreting experimental data, but for designing robust, high-performance circuits in the real world.
 
 
 As a quick bonus, during one of labs the mercury vapor bulb used for exposing photoresist in the mask aligner we used exploded! Because this was the only mask aligner in the engineering building we had to move subsequent labs to the engineering research complex where they have a clean room. Normally the clean room is used only for research and graduate level courses so we would not get to work there but because of the mishap we were allowed to use it. It was a super cool experience! I never dreamed I would get to work in an environment like that and as a bonus I got to keep the clean room bunny suit they gave us! Also It was really cool to get to see the machines we had learned about in class and get more detailed explanations of those processes, Chemical vapor deposition and Electron-beam physical vapor deposition are such cool technologies, they are almost like a form of sorcery!
