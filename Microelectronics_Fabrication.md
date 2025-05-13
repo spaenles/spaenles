@@ -39,6 +39,41 @@ The graphs below illustrate the comparison between the calculated and measured I
 
 ![image](https://github.com/user-attachments/assets/8c5d6eac-58d4-4bbc-8d30-77e866bce664)
 
+The second graph shows the idealized I–V curves derived using standard equations for MOSFET operation in the linear and saturation regions. These were calculated under the assumption of nominal parameters—perfect channel geometry, constant mobility, and no second-order effects. In contrast, the first graph displays the measured characteristics from the actual silicon device we fabricated. At first glance, the difference is clear: the measured current levels are generally higher, the transition to saturation occurs at a higher drain voltage, and perhaps most notably, the "flat" saturation region predicted by theory now slopes upward.
+
+So, what's going on here?
+### Process Variation:
+
+Even with a tightly controlled fabrication process, no two transistors are identical. Slight variations in photolithography, doping concentrations, oxidation times, and etching can shift the physical dimensions and material properties of the device. For example:
+
+- **Channel length shortening:** A key contributor to the observed differences. A slightly shorter effective channel means lower resistance and higher drive current, pushing the measured I–V curves above the analytical ones.
+
+- **Oxide thickness variation:** A thinner gate oxide increases gate capacitance, thereby enhancing transconductance and current levels.
+
+- **Doping fluctuations:** Can shift the threshold voltage or influence subthreshold behavior.
+
+These process-induced deviations are small in physical terms but have a noticeable impact on electrical behavior. The analytical model, using nominal values, simply can't capture these effects.
+
+### Channel Length Modulation:
+
+One standout feature in the measured curves is the non-flat saturation region. In the ideal MOSFET model, once the transistor enters saturation, the drain current I<sub>D</sub> is supposed to level off. But in our measurements, I<sub>D</sub> keeps rising with V<sub>D</sub>.
+
+This is due to channel length modulation , a second-order effect often omitted in basic models. As V<sub>D</sub>​ increases, the depletion region at the drain end widens, effectively reducing the channel length. A shorter channel means less resistance and, again, more current. The result is a positive slope in the saturation region—subtle, but significant.
+
+Mathematically, this is often captured by modifying the saturation current expression to include a (1 + λV<sub>DS</sub>​) factor, where λ is the channel length modulation parameter. This adjustment helps align theory with real-world data but isn't included in the simpler models used for the analytical curve.
+
+### Other Non-Idealities:
+
+CLM isn't the only second-order effect at play. Real MOSFETs suffer from:
+
+- **Mobility degradation:** Under high electric fields, carrier mobility decreases, which can blunt the current gain expected from increased gate voltage.
+
+- **Parasitic resistances:** Resistance in the source and drain contacts introduces voltage drops not accounted for in ideal models, distorting the effective VGSVGS​ and VDSVDS​ seen by the channel.
+
+These effects combine to make the real transistor behave in a way that diverges from theoretical expectations—sometimes subtly, sometimes dramatically.
+
+
+
 
 As a quick bonus, during one of labs the mercury vapor bulb used for exposing photoresist in the mask aligner we used exploded! Because this was the only mask aligner in the engineering building we had to move subsequent labs to the engineering research complex where they have a clean room. Normally the clean room is used only for research and graduate level courses so we would not get to work there but because of the mishap we were allowed to use it. It was a super cool experience! I never dreamed I would get to work in an environment like that and as a bonus I got to keep the clean room bunny suit they gave us! Also It was really cool to get to see the machines we had learned about in class and get more detailed explanations of those processes, Chemical vapor deposition and Electron-beam physical vapor deposition are such cool technologies, they are almost like a form of sorcery!
 
